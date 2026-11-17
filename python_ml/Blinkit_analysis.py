@@ -3,12 +3,120 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+
+def apply_blinkit_theme():
+    st.markdown("""
+    <style>
+
+    /* Main application backstreaground */
+    .stApp {
+        background-color: #F7F9F2;
+        color: #243B2A;
+    }
+
+    /* Main content text */
+    .stApp p,
+    .stApp span,
+    .stApp label,
+    .stApp li,
+    .stApp div {
+        color: #243B2A;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4 {
+        color: #176B35 !important;
+        font-weight: 700;
+    }
+
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #FFF2B2;
+    }
+
+    [data-testid="stSidebar"] * {
+        color: #24452D !important;
+    }
+
+    /* Metric cards */
+    [data-testid="stMetric"] {
+        background-color: #FFFFFF;
+        border: 1px solid #DCE8D4;
+        padding: 18px;
+        border-radius: 14px;
+        box-shadow: 0 2px 8px rgba(30, 80, 40, 0.06);
+    }
+
+    [data-testid="stMetricLabel"] {
+        color: #52734D !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        color: #176B35 !important;
+        font-weight: 700;
+    }
+
+    /* Buttons */
+    .stButton > button {
+        background-color: #258B45;
+        color: #FFFFFF !important;
+        border: none;
+        border-radius: 9px;
+        font-weight: 600;
+    }
+
+    .stButton > button:hover {
+        background-color: #176B35;
+        color: #FFFFFF !important;
+    }
+
+    /* Tabs */
+    .stTabs [data-baseweb="tab"] {
+        color: #365C3C !important;
+        font-weight: 600;
+    }
+
+    .stTabs [data-baseweb="tab"][aria-selected="true"] {
+        color: #17833B !important;
+        border-bottom-color: #F7D34A !important;
+    }
+
+    /* Input fields */
+    .stTextInput input,
+    .stNumberInput input,
+    .stDateInput input,
+    .stSelectbox div[data-baseweb="select"] {
+        background-color: #FFFFFF;
+        color: #243B2A !important;
+    }
+
+    /* Dataframes and tables */
+    [data-testid="stDataFrame"],
+    [data-testid="stTable"] {
+        background-color: #FFFFFF;
+    }
+
+    /* Links */
+    .stApp a {
+        color: #16833B !important;
+    }
+
+    </style>
+    """, unsafe_allow_html=True)
+
+
 
 st.set_page_config(
     page_title="Blinkit Analytics & ML",
     page_icon="🛒",
     layout="wide",
 )
+
+apply_blinkit_theme()
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "Outputs"
