@@ -1,15 +1,32 @@
 ﻿#  Blinkit Business Analytics & Machine Learning Project
 
-\<h3 align="center">
-&#x20; \<span style="color:#F7C948;">Turning Raw Data\</span>&#x20;
-&#x20; \<span style="color:#00C9A7;">Into Business Insights\</span>
-\</h3>
+# 🟡 Blinkit Business Analytics & Machine Learning Project
 
-\<p align="center">   An end-to-end data analytics project exploring commercial performance, customer behaviour, product trends, delivery operations, and predictive analytics through SQL, Python, Power BI, and Machine Learning. \</p>
+<h3 align="center">
+  <span style="color:#F7C948;">Turning Raw Data</span>
+  <span style="color:#00C9A7;">Into Business Insights</span>
+</h3>
 
-\<p align="center">   \<img src="[https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge\&logo=powerbi\&logoColor=black)" />   \<img src="[https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white](https://img.shields.io/badge/NumPy-013243?style=for-the-badge\&logo=numpy\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge\&logo=scikitlearn\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)" /> \</p>
+<p align="center">
+  An end-to-end analytics project exploring commercial performance, supply and supplier operations, inventory and quality, customer behaviour, and predictive analytics using SQL, Python, Power BI, and Machine Learning.
+</p>
 
-\<p align="center">   \<b>📊 Business Intelligence | 🐍 Data Analytics | 🤖 Machine Learning | 📈 Data-Driven Decision Making\</b> \</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</p>
+
+<p align="center">
+  <b> Business Intelligence |  Data Analytics |  Machine Learning |  Data-Driven Decision Making</b>
+</p>
+
+\<p align="center">   \<b> Business Intelligence |  Data Analytics |  Machine Learning |  Data-Driven Decision Making\</b> \</p>
 
 
 
