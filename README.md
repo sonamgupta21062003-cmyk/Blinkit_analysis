@@ -1,6 +1,4 @@
-﻿#  Blinkit Business Analytics & Machine Learning Project
-
-# 🟡 Blinkit Business Analytics & Machine Learning Project
+﻿# 🟡 Blinkit Business Analytics & Machine Learning Project
 
 <h3 align="center">
   <span style="color:#F7C948;">Turning Raw Data</span>
