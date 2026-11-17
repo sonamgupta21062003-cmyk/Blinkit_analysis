@@ -226,8 +226,6 @@ Applied SQL-based cleaning operations to improve data reliability and prepare th
 
 **Query Results:**
 
-![Data Cleaning Results](screenshots/sql/02_cleaning_results.png)
-
 ---
 
 ###  3. Orphan Record Auditing
@@ -333,13 +331,9 @@ Connected Python to the MySQL database using `mysql-connector-python` / SQLAlche
 
 **Code Screenshot:**
 
-![Python MySQL Connection](screenshots/python/01_mysql_connection.png)
+<img width="897" height="805" alt="image" src="https://github.com/user-attachments/assets/7610586d-2a19-43fd-a4ba-487b34540902" />
+<img width="732" height="602" alt="image" src="https://github.com/user-attachments/assets/ddbba362-9bcd-4591-aab5-4e9c73c60daa" />
 
-**Execution Output:**
-
-![MySQL Data Loading Output](screenshots/python/01_mysql_output.png)
-
----
 
 ###  2. Data Preparation & Feature Engineering
 
@@ -354,11 +348,13 @@ Prepared the analytical dataset for machine learning while preserving meaningful
 
 **Code Screenshot:**
 
-![Python Feature Engineering](screenshots/python/02_feature_engineering.png)
+<img width="841" height="797" alt="image" src="https://github.com/user-attachments/assets/a935fec5-8a5f-445f-9c5b-46f3a776be1a" />
+
 
 **Execution Output:**
 
-![Feature Engineering Output](screenshots/python/02_feature_output.png)
+<img width="1451" height="473" alt="image" src="https://github.com/user-attachments/assets/34dad1b7-38ba-44c9-a69f-3a8c0129087b" />
+
 
 ---
 
