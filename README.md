@@ -656,3 +656,61 @@ The model produced a WAPE of 71.77%, indicating limited forecasting accuracy rel
 - **Data Limitations:** Missing calendar dates were treated as zero-demand days, which is an assumption that may influence forecasting performance.
 
 **Overall Outcome:** Built three exploratory machine learning solutions connecting customer intelligence, delivery operations, and demand forecasting. The project emphasizes model evaluation, business interpretation, and honest assessment of predictive limitations rather than relying on model scores alone.
+
+
+
+##  Application Deployment – Streamlit
+
+Developed a Streamlit web application to present the Blinkit analytics and machine learning results through an interactive interface.
+
+###  Application Features
+- Blinkit-inspired yellow and green user interface.
+- Interactive project overview and analytical results.
+- Customer segmentation visualization.
+- Machine learning model evaluation.
+- Demand forecasting results and feature importance.
+- Organized presentation of exported analytical reports.
+
+### Deployment Technology
+- **Framework:** Streamlit
+- **Language:** Python
+- **Data Processing:** Pandas, NumPy
+- **Machine Learning:** Scikit-learn
+- **Version Control:** Git and GitHub
+
+###  Run the Application Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sonamgupta21062003-cmyk/Blinkit_analysis.git
+```
+
+Navigate to the Python project directory:
+
+```bash
+cd Blinkit_analysis/python_ml
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Streamlit application:
+
+```bash
+streamlit run Blinkit_analysis.py
+```
+
+### 🌐 Live Application
+
+**Streamlit App:** [(https://blinkitanalysis-ceounnv2gu2pcfsgvqhmkp.streamlit.app/)]
+
+###  Application Preview
+
+<img width="1392" height="831" alt="image" src="https://github.com/user-attachments/assets/939749ef-9f63-4358-960d-051501ada2cf" />
+
+
+**Deployment Objective:** Make the analytical findings and machine learning outputs accessible through an interactive web application.
