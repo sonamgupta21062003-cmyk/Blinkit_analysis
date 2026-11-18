@@ -1,4 +1,0 @@
-Model,Algorithm,Metric,Score,Result
-Delivery Prediction,Random Forest,Accuracy / Macro F1,68.9% / 27.2%,Weak class-wise performance
-Customer Segmentation,K-Means,Silhouette Score,0.4377,4 exploratory customer segments
-Demand Forecasting,Random Forest,MAE / RMSE / WAPE,1.69 / 2.15 / 71.77%,Limited forecasting accuracy

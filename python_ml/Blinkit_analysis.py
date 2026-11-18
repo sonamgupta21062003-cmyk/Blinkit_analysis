@@ -226,44 +226,48 @@ with tab_customers:
                 hide_index=True,
             )
 
+
 with tab_models:
     st.subheader("Delivery classification")
 
-    if delivery_report is not None:
-        st.dataframe(delivery_report, use_container_width=True, hide_index=True)
+    # Get delivery results from the existing combined ML report
+    if ml_report is not None and "Model" in ml_report.columns:
 
-        if {"Model", "Accuracy", "Macro_F1"}.issubset(delivery_report.columns):
-            plot_data = delivery_report.melt(
-                id_vars="Model",
-                value_vars=["Accuracy", "Macro_F1"],
-                var_name="Metric",
-                value_name="Score",
+        delivery_summary = ml_report[
+            ml_report["Model"].astype(str).str.contains(
+                "Delivery", case=False, na=False
             )
-            chart = px.bar(
-                plot_data,
-                x="Model",
-                y="Score",
-                color="Metric",
-                barmode="group",
-                title="Delivery model comparison",
-                text_auto=".2f",
+        ]
+
+        if not delivery_summary.empty:
+           
+
+            st.dataframe(
+                delivery_summary,
+                use_container_width=True,
+                hide_index=True
             )
-            st.plotly_chart(chart, use_container_width=True)
-    else:
-        st.info(
-            "The separate delivery comparison report is optional. "
-            "The combined ML summary may be shown above instead."
+        else:
+            st.warning("Delivery results were not found in the ML summary.")
+
+        st.markdown("#### Combined ML summary")
+
+        st.dataframe(
+            ml_report,
+            use_container_width=True,
+            hide_index=True
         )
 
-    st.markdown("#### Combined ML summary")
-    if ml_report is not None:
-        st.dataframe(ml_report, use_container_width=True, hide_index=True)
+    else:
+        show_missing_file("blinkit_ml_model_comparison.csv")
 
     st.caption(
-        "The delivery classification experiment had weak class-wise performance. "
-        "Accuracy alone can be misleading when delayed-order classes are smaller; "
-        "review Macro-F1 and the dataset limitations before drawing conclusions."
+        "The delivery classification experiment had weak class-wise "
+        "performance. Accuracy alone can be misleading when delayed-order "
+        "classes are smaller. Review Macro-F1 and dataset limitations "
+        "before drawing conclusions."
     )
+
 
 with tab_forecast:
     st.subheader("Demand forecasting")
