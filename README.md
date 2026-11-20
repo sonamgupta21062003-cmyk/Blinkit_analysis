@@ -24,8 +24,6 @@
   <b> Business Intelligence |  Data Analytics |  Machine Learning |  Data-Driven Decision Making</b>
 </p>
 
-\<p align="center">   \<b> Business Intelligence |  Data Analytics |  Machine Learning |  Data-Driven Decision Making\</b> \</p>
-
 
 
 1. Overall understanding of the dataset
@@ -40,8 +38,11 @@ Inventory	Inventory-related tables	Stock and product availability
 Marketing	Marketing performance	Campaign performance and marketing effectiveness
 
 The business value: combining these datasets makes it possible to study not only how much business was generated, but also what influenced that performance — customer behaviour, product mix, delivery experience and marketing activity.
+
 2. How the data connects
 The central relationship is the order. Orders connect to customers and order items; order items connect to products. Delivery and feedback records can be connected through the order identifier. Marketing and inventory provide additional business context.
+
+
 3. Understanding the main business metrics
 These are the important measurements the combined data can support:
 Metric	Business meaning
@@ -59,6 +60,8 @@ Campaign performance	Performance of marketing campaigns using available campaign
 Inventory availability	Product stock and availability patterns, subject to the fields available
 
 Important distinction: revenue is calculated from the order-item level using quantity × unit price. Estimated profit is a separate calculation that depends on the product cost or margin information. Revenue should not be described as profit.
+
+
 4. What makes this dataset useful?
 The strongest aspect is the ability to connect different business questions.
 - Commercial performance: Which products and categories generate the most revenue? How do sales change over time?
@@ -69,6 +72,8 @@ The strongest aspect is the ability to connect different business questions.
 - Marketing performance: How do campaigns perform against their available spend, impressions, clicks or conversion metrics?
 - Inventory analysis: Which products need attention based on stock and availability information?
 This is more valuable than reporting revenue alone because it connects business outcomes with operational and customer-related factors.
+
+
 5. Data quality and important considerations
 There are a few points we should explain transparently in the README.
 1. Uncategorized products: You previously found that the uncategorized group contains a substantial amount of data. Removing it could exclude meaningful sales and distort totals. It should remain in the analysis as an explicit category, with its data-quality limitation documented.
@@ -77,11 +82,15 @@ There are a few points we should explain transparently in the README.
 4. Missing information: Missing customer, product, delivery or feedback fields should be assessed according to the analysis rather than automatically deleting records.
 5. Estimated profit: This is a derived estimate, not necessarily the company's actual accounting profit.
 6. Dataset authenticity: We should describe this as a Blinkit-focused analytics case study using the provided dataset, not claim that it is official internal Blinkit company data unless its source confirms that.
+
+
+
 6. What the data analysis has already produced
 Your completed analysis goes beyond descriptive dashboards:
 Customer segmentation
-4
-Exploratory K-Means customer segments
+
+
+4.Exploratory K-Means customer segments
 - 590 customers in the segmentation report.
 - Silhouette score: 0.4377.
 - Segments are profiled using recency, frequency and monetary value.
@@ -100,6 +109,8 @@ Exploratory K-Means customer segments
 - Forecasting accuracy is limited; missing calendar dates were treated as zero-demand days.
 
 These are actual results from your saved model reports, not target or predicted performance claims.
+
+
 7. My recommendation for the README
 I would structure the dataset section around this story:
 From raw business data to business intelligence
@@ -173,6 +184,7 @@ Developed an interactive Power BI solution featuring **three business-focused da
 - KPI cards and business-focused visualizations
 - Dashboard design and performance optimization
 - Data storytelling and business insights
+- 
 
 **Outcome:** Built a three-dashboard business intelligence solution connecting commercial performance, supply operations, and inventory quality to support data-driven decisions.
 
@@ -201,7 +213,6 @@ Performed an initial audit of the source tables to understand the dataset struct
 <img width="321" height="223" alt="image" src="https://github.com/user-attachments/assets/15c98343-d6fb-4a45-8c2c-f1bf260f4aea" />
 
 
----
 
 ###  2. Data Cleaning
 Applied SQL-based cleaning operations to improve data reliability and prepare the tables for analysis.
@@ -224,9 +235,6 @@ Applied SQL-based cleaning operations to improve data reliability and prepare th
 
 
 
-**Query Results:**
-
----
 
 ###  3. Orphan Record Auditing
 Validated relationships between related tables by identifying records that did not have matching parent records.
@@ -248,7 +256,7 @@ Validated relationships between related tables by identifying records that did n
 <img width="323" height="173" alt="image" src="https://github.com/user-attachments/assets/028a8f29-dc1a-45ae-afcb-79489030d1ce" />
 
 
----
+
 
 ###  4. Data Standardization
 Improved consistency in data values and formats to make the dataset more reliable for reporting and analysis.
@@ -266,7 +274,7 @@ Improved consistency in data values and formats to make the dataset more reliabl
 
 "This query creates a cleaned version of the raw blinkit_customers table. It removes duplicate records and entries missing a customer ID. It also standardizes text formatting, converts registration dates into a proper date format, and fills missing customer segments with a default 'Regular' label."
 
----
+
 
 ###  5. Table Joining & Analytical View Creation
 Combined relevant cleaned tables using SQL joins to create a consolidated analytical dataset for downstream business analysis.
@@ -356,7 +364,6 @@ Prepared the analytical dataset for machine learning while preserving meaningful
 <img width="1451" height="473" alt="image" src="https://github.com/user-attachments/assets/34dad1b7-38ba-44c9-a69f-3a8c0129087b" />
 
 
----
 
 ###  3. Customer Segmentation – RFM Analysis & K-Means
 
@@ -381,13 +388,15 @@ Applied RFM (Recency, Frequency, Monetary) analysis to understand customer purch
 
 **Code Screenshot:**
 
-![Customer Segmentation Code](screenshots/python/03_customer_segmentation.png)
+<img width="727" height="265" alt="image" src="https://github.com/user-attachments/assets/7dc37b5a-5d9e-4ecd-b220-3487008ae089" />
+
 
 **Results & Segment Analysis:**
 
-![Customer Segmentation Results](screenshots/python/03_segmentation_results.png)
+<img width="792" height="562" alt="image" src="https://github.com/user-attachments/assets/873d2c48-cba4-4bbc-b50e-2b9a51fe2c50" />
 
----
+
+
 
 ###  4. Delivery Performance Prediction
 
@@ -449,31 +458,35 @@ Developed an exploratory demand forecasting model using historical daily demand 
 
 ![Demand Forecasting Results](screenshots/python/05_forecasting_results.png)
 
----
 
-###  6. Feature Importance Analysis
+## 📈 Demand & Seasonality Analysis
 
-Used Random Forest feature importance to examine which engineered features contributed most to the demand forecasting model.
+### 1. Daily Demand Trend
+<img width="1713" height="597" alt="image" src="https://github.com/user-attachments/assets/6a8edb66-bc9f-4716-82c4-e4689bf6db6e" />
 
-**Top contributing features:**
-
-| Feature | Importance |
-|---|---:|
-| Rolling_7 | 27.24% |
-| Day_of_Month | 26.38% |
-| Lag_1 | 15.90% |
-
-**Observation:** Recent rolling demand and calendar-related patterns were among the most influential features in the trained model.
-
-**Code Screenshot:**
-
-![Feature Importance Code](screenshots/python/06_feature_importance.png)
-
-**Feature Importance Results:**
-
-![Feature Importance Results](screenshots/python/06_feature_importance_results.png)
+* **High Day-to-Day Volatility:** Daily order quantities fluctuate sharply between **0 and 6 units** on most days, punctuated by sharp single-day demand spikes reaching **12 to 15 units** (notably in May 2023, February 2024, and August 2024).
+* **Inventory Implication:** Frequent zero-sale days alongside sudden spikes highlight the need for safety-stock buffers rather than relying solely on static daily averages.
 
 ---
+
+### 2. Monthly Demand Trend
+<img width="1482" height="597" alt="image" src="https://github.com/user-attachments/assets/23c0b581-faa2-439d-9426-c7e49b37d17e" />
+
+* **Peak Sales Months:** Monthly demand peaked in **August 2024 (>100 units)** and **September 2023 (~90 units)**, while steady mid-range performance held between **60 and 80 units** across most months.
+* **Partial-Month Drop-Off:** The sharp drop in **November 2024 (~9 units)** reflects incomplete month-end data rather than an actual demand collapse—an important caveat for time-series forecasting models.
+
+---
+
+### 3. Average Demand by Day of Week
+<img width="1227" height="606" alt="image" src="https://github.com/user-attachments/assets/f003943c-e808-4fd5-9615-21e69a883dcb" />
+
+* **Mid-Week Peak:** Demand builds steadily from Monday (~2.1 units) to a **Wednesday peak (~2.7 units)**, followed by a secondary **Sunday rebound (~2.4 units)**.
+* **Operational Staffing:** Lower average volumes on **Friday and Saturday (~2.0 units)** present an opportunity to schedule inventory restocking and dark-store maintenance ahead of Sunday and mid-week surges.
+
+
+
+
+
 
 ###  7. Exported Python Analysis Results
 
@@ -539,13 +552,14 @@ The project explores three machine learning use cases:
 
 **Model Screenshot:**
 
-![K-Means Clustering](screenshots/ml/01_customer_segmentation.png)
+<img width="687" height="570" alt="image" src="https://github.com/user-attachments/assets/e1f6cbe1-55b8-4b44-867e-5cd8a59c5883" />
+
 
 **Cluster Evaluation & Results:**
 
-![Customer Segmentation Results](screenshots/ml/01_clustering_results.png)
+<img width="651" height="505" alt="image" src="https://github.com/user-attachments/assets/a2f02ea7-12ec-48f4-affe-ff747c876cd6" />
 
----
+
 
 ###  2. Delivery Outcome Prediction – Classification
 
@@ -576,15 +590,6 @@ The model achieved 68.9% accuracy but only 27.2% Macro F1-score. This indicates 
 - Demonstrates the challenges of predicting operational performance.
 - Highlights the importance of class-wise evaluation rather than relying only on accuracy.
 
-**Model Screenshot:**
-
-![Delivery Classification Model](screenshots/ml/02_delivery_prediction.png)
-
-**Model Evaluation:**
-
-![Delivery Model Evaluation](screenshots/ml/02_delivery_results.png)
-
----
 
 ###  3. Demand Forecasting – Regression
 
@@ -616,13 +621,13 @@ The model produced a WAPE of 71.77%, indicating limited forecasting accuracy rel
 - Demonstrates the use of lag and rolling-window features.
 - Provides a foundation for further inventory and demand planning experiments.
 
-**Model Screenshot:**
+**Screenshot:**
 
-![Demand Forecasting Model](screenshots/ml/03_demand_forecasting.png)
+<img width="1102" height="605" alt="image" src="https://github.com/user-attachments/assets/7eb4efd8-d075-4d0a-9615-e94963eb3ef5" />
 
-**Forecasting Evaluation:**
 
-![Demand Forecasting Results](screenshots/ml/03_forecasting_results.png)
+<img width="392" height="277" alt="image" src="https://github.com/user-attachments/assets/60727691-7fa0-43ca-af94-a10d92d6e80c" />
+
 
 ---
 
