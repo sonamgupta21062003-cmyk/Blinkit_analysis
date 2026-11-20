@@ -156,8 +156,12 @@ Developed an interactive Power BI solution featuring **three business-focused da
 
 ###  Dashboard 2: Supply & Supplier Analysis
 • Delivery & Fulfillment SLAs: Monitored operational efficiency across 26K orders, tracking a 69.40% On-Time Delivery (OTD) rate, 2.01 Average Order Quantity (AOQ), and 5.07-minute average delivery delay.
-• Supplier & Brand Profitability: Evaluated brand-level supply performance by comparing Total Revenue ($11.01M overall), Gross Profit ($1.36M), and Wastage Quantity (81,377 units) across top suppliers like Mandal-Kar and Karnik PLC.
+
+• Supplier & Brand Profitability: Evaluated brand-level supply performance by comparing Total Revenue ($11.01M overall), Gross Profit ($1.36M), and Wastage Quantity (81,377 units) across top suppliers like 
+Mandal-Kar and Karnik PLC.
+
 • Demand & Revenue Seasonality: Tracked monthly revenue trends (peaking between May and August at $1.17M–$1.18M) alongside customer segment distribution (Regular, New, Premium, Inactive) to support inventory planning.
+
 • Area & Year Drill-Downs: Built interactive slicers for Area and Year (2023–2024) to pinpoint regional delivery bottlenecks and high-wastage brands.
 
 
@@ -167,8 +171,11 @@ Developed an interactive Power BI solution featuring **three business-focused da
 
 ###  Dashboard 3: Inventory & Quality Analysis
 • Growth & Profitability KPIs: Tracked overall inventory performance across $11.01M Total Revenue and $1.36M Gross Profit, highlighting a 127.04% Revenue Growth, 128.36% Quantity Growth, and 0.12 (12%) average Gross Margin.
+
 • Product-Level Portfolio Matrix (Scatter Chart): Mapped individual SKUs (Spinach, Soap, Diapers, Carrots, Cat Food, Dog Food, Ice Cream) by Revenue Growth % (X-axis), Gross Margin (Y-axis), and Total Revenue (bubble size) to identify high-margin vs. high-growth items.
+
 • Time-Series Play Axis (Monthly Tracking): Added an interactive Month play-axis (Months 1–12) so stakeholders can animate and track how product margins and demand growth shift throughout the year.
+
 • Assortment & Margin Optimization: Pinpointed high-margin staples (like Spinach at ~50% margin and Soap at ~46%) alongside rapid-growth volume drivers (like Diapers and Carrots exceeding 300% growth) to guide stock prioritization.
 
 
