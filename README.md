@@ -145,10 +145,12 @@ Business insights and decision support
 Developed an interactive Power BI solution featuring **three business-focused dashboards** to analyze commercial performance, supply chain operations, supplier performance, inventory management, and quality metrics.
 
 ###  Dashboard 1: Commercial Overview
-• Headline KPIs: Tracked $11.01M Total Revenue, $1.36M Gross Profit, 26K Total Orders, 69.40% On-Time Delivery, 32.19% Stockout Rate, and 81K Waste Quantity.
-• Dynamic Monthly Trends: Analyzed monthly seasonality with interactive toggles for Total Revenue, Total Orders, COGS, and Gross Margin.
-• Category Growth (YoY): Compared Current vs. Prior Year Revenue by order volume, identifying Dairy & Breakfast (~$1.25M) as the top category.
-• Top Markets, SKUs & Segments: Highlighted top areas (Yamunanagar 28.1%, Visakhapatnam 25.7%), top products (Pet Treats, Toilet Cleaner), and AOV (~$420) across customer segments.
+### Dashboard 1: Commercial Overviews
+* **Headline KPIs:** Tracked **$11.01M Total Revenue**, **$1.36M Gross Profit**, **26K Total Orders**, **69.40% On-Time Delivery**, **32.19% Stockout Rate**, and **81K Waste Quantity**.
+* **Dynamic Monthly Trends:** Analyzed monthly seasonality with interactive toggles for **Total Revenue, Total Orders, COGS, and Gross Margin**.
+* **Category Growth (YoY):** Compared **Current vs. Prior Year Revenue** by order volume, identifying **Dairy & Breakfast (approx. $1.25M)** as the top category.
+* **Top Markets, SKUs & Segments:** Highlighted top areas (**Yamunanagar 28.1%**, **Visakhapatnam 25.7%**), top products (*Pet Treats, Toilet Cleaner*), and **AOV (approx. $420)** across customer segments.
+  
 <img width="1163" height="646" alt="image" src="https://github.com/user-attachments/assets/6f16fdac-dc6d-4997-aa64-8034e963a1f3" />
 
 
@@ -157,6 +159,7 @@ Developed an interactive Power BI solution featuring **three business-focused da
 • Supplier & Brand Profitability: Evaluated brand-level supply performance by comparing Total Revenue ($11.01M overall), Gross Profit ($1.36M), and Wastage Quantity (81,377 units) across top suppliers like Mandal-Kar and Karnik PLC.
 • Demand & Revenue Seasonality: Tracked monthly revenue trends (peaking between May and August at $1.17M–$1.18M) alongside customer segment distribution (Regular, New, Premium, Inactive) to support inventory planning.
 • Area & Year Drill-Downs: Built interactive slicers for Area and Year (2023–2024) to pinpoint regional delivery bottlenecks and high-wastage brands.
+
 
 <img width="1177" height="656" alt="image" src="https://github.com/user-attachments/assets/911e6c07-7a3e-43fd-a8dc-1fc46ca49357" />
 
