@@ -145,12 +145,10 @@ Business insights and decision support
 Developed an interactive Power BI solution featuring **three business-focused dashboards** to analyze commercial performance, supply chain operations, supplier performance, inventory management, and quality metrics.
 
 ###  Dashboard 1: Commercial Overview
-- Analyzed overall revenue, order volume, and quantity sold.
-- Evaluated sales trends and business performance over time.
-- Compared revenue contribution across product categories.
-- Examined key commercial KPIs to understand sales performance.
-- Identified important trends to support business decision-making.
-
+• Headline KPIs: Tracked $11.01M Total Revenue, $1.36M Gross Profit, 26K Total Orders, 69.40% On-Time Delivery, 32.19% Stockout Rate, and 81K Waste Quantity.
+• Dynamic Monthly Trends: Analyzed monthly seasonality with interactive toggles for Total Revenue, Total Orders, COGS, and Gross Margin.
+• Category Growth (YoY): Compared Current vs. Prior Year Revenue by order volume, identifying Dairy & Breakfast (~$1.25M) as the top category.
+• Top Markets, SKUs & Segments: Highlighted top areas (Yamunanagar 28.1%, Visakhapatnam 25.7%), top products (Pet Treats, Toilet Cleaner), and AOV (~$420) across customer segments.
 <img width="1163" height="646" alt="image" src="https://github.com/user-attachments/assets/6f16fdac-dc6d-4997-aa64-8034e963a1f3" />
 
 
