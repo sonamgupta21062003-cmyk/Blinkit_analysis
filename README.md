@@ -427,15 +427,6 @@ Developed classification models to explore whether delivery outcomes could be pr
 
 **Observation:** The model showed weak class-wise performance, indicating difficulty predicting underrepresented delivery classes. Accuracy alone was therefore not sufficient to judge its effectiveness.
 
-**Code Screenshot:**
-
-![Delivery Prediction Code](screenshots/python/04_delivery_prediction.png)
-
-**Model Evaluation:**
-
-![Delivery Prediction Results](screenshots/python/04_delivery_results.png)
-
----
 
 ###  5. Demand Forecasting
 
@@ -459,13 +450,6 @@ Developed an exploratory demand forecasting model using historical daily demand 
 
 **Important observation:** The forecasting model had limited accuracy, with a WAPE of 71.77%. It should be treated as an exploratory model rather than a reliable production forecasting solution.
 
-**Code Screenshot:**
-
-![Demand Forecasting Code](screenshots/python/05_demand_forecasting.png)
-
-**Forecasting Results:**
-
-![Demand Forecasting Results](screenshots/python/05_forecasting_results.png)
 
 
 ## 📈 Demand & Seasonality Analysis
